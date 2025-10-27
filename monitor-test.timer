@@ -1,0 +1,10 @@
+[Unit]
+Description=Run monitor.test.sh every minute
+
+[Timer]
+OnBootSec=30s
+OnUnitActiveSec=1min
+Unit=monitor-test.service
+
+[Install]
+WantedBy=timers.target
